@@ -1,0 +1,15 @@
+<script>
+    //431 reverse it...
+    var num = prompt("enter a no");
+    var rev=0;
+    var rem
+
+    while(num > 0)
+    {
+        rem=parseInt(num%10);
+        rev =parseInt(rev*10+rem);
+        num=parseInt(num/10);
+    }
+    document.write(rev);
+    
+</script>

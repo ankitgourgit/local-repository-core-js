@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <select name="" id="pick" onchange="showFlavour()">
+            <option lable="Select"></option>
+            <option  value="">Mango</option>
+            <option value="">Dark chocolate</option>
+            <option value="">Tuti-fruti</option>
+            <option value="">Vanilla</option>
+            <option value="">strawberry</option>
+        </select><br> <br>
+        <textarea name="" id="txt" cols="30" rows="10" id="txtarea"></textarea>
+    </body>
+    <script>
+        function showFlavour(){
+            var flv =document.getElementById("pick")
+            var displaytext =flv.options[flv.selectedIndex].text
+            document.getElementById("txt").value = displaytext
+
+        }
+
+
+    </script>
+</html>

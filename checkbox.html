@@ -1,0 +1,30 @@
+<html>
+    <input type="checkbox"  id="choclate">Choclate <br>
+    <input type="checkbox" id="vanilla">Vanilla <br>
+    <button type="reset" onclick="checkOrder()">Enter</button>
+
+<script>
+    function checkOrder(){
+        var a = document.getElementById("choclate");
+        var b = document.getElementById("vanilla");
+
+        if(a.checked==true && b.checked==true){
+            alert("You Choose both");
+        }
+        else if(a.checked==true){
+            alert("You Choose Choclate");
+        }
+        else if(b.checked==true){
+            alert("You Choose Vanilla");
+        }
+        else{
+            alert("Choose any one");
+        }
+
+    }
+
+    checkbox.checked = false;
+
+    
+</script>
+</html>

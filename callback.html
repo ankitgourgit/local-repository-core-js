@@ -1,0 +1,28 @@
+<script>
+    const data=[
+    {name:"ankit",depart:"CE"},
+    {name:"mohit",depart:"ME"}
+    ];
+
+    function getData(){
+        setTimeout(()=>{
+            let output="";
+            data.forEach((data,index)=>{
+                output+=data.name;
+            })
+            document.write(output)
+
+        },1000)
+    }
+
+function createData(newdata,callback){
+    setTimeout(()=>{
+        data.push(newdata);
+        callback()
+    },2000)
+
+}
+
+createData({name:'ankur',depart:'WM'}, getData);
+   
+</script>

@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <style>
+            body{background-color: bisque;}
+            img{
+                width: 300px;   
+                height: 300px;
+                padding: 20px;
+         }
+        </style>
+    </head>
+    <body>
+        <img src="https://w7.pngwing.com/pngs/895/199/png-transparent-spider-man-heroes-download-with-transparent-background-free-thumbnail.png" alt="spiderman"  onclick="imgName1()" id="img1" >
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqe3VJsl1EMU6WdM1yl9XowOvN37H7Eu58dd1uwjYKyQ&usqp=CAU&ec=48600112" alt="butterfly"  onclick="imgName2()" id="img2">
+        <img src="https://static.vecteezy.com/system/resources/previews/001/204/011/original/soccer-ball-png.png" alt="football"  onclick="imgName3()" id="img3"> <br>
+        <textarea  cols="130" rows="5" id="txtval"></textarea>
+    </body>
+    <script>
+       
+        function imgName1(){
+             document.getElementById('txtval').value='spiderman'
+        }
+
+
+        function imgName2(){
+             document.getElementById('txtval').value='butterfly'
+       }
+
+
+       function imgName3(){
+       var textarea= document.getElementById('txtval') 
+        textarea.value='football'
+   }
+
+    </script>
+</html>

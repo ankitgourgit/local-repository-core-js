@@ -1,0 +1,35 @@
+<script>
+    const data=[
+    {name:'Ankit',depart:"CE"},
+    {name:'Mohit',depart:"ME"}
+    ]
+
+    function getData(){
+        setTimeout(()=>{
+            let output="";
+            data.forEach((data,index)=>{
+                output+=data.name;
+            })
+            document.write(output)
+
+        },1000)
+    }
+
+    function createData(newdata){
+        return new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                data.push(newdata)
+                let error=false
+                if(!error)
+                {
+                    resolve()
+                }
+                else{
+                    reject("errorrr");
+                }
+            },2000)
+        })
+    }
+
+    createData({name:"anuj",depart:"EE"}).then(getData).catch(error=>console.log(error));
+</script>
